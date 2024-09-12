@@ -1,0 +1,12 @@
+{
+  "SqlSugarSettings": {
+    "ConnectionStrings": [
+      {
+        "ConfigId": "OPDispensary",
+        "ConnectionString": "Data Source=./OPDispensary.db",
+        "DbType": "Sqlite",
+        "IsAutoCloseConnection": true
+      }
+    ]
+  }
+}

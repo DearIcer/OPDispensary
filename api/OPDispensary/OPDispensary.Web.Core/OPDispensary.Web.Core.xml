@@ -1,0 +1,1805 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OPDispensary.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:OPDispensary.Web.Core.AuthComponent">
+            <summary>
+                认证相关组件
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LoggingMonitorComponent">
+            <summary>
+                LoggingMonitor操作日志写入数据库插件
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.WebSettingsComponent">
+            <summary>
+                Web设置组件
+                模拟 ConfigureService
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.WebSettingsApplicationComponent">
+            <summary>
+                Web设置组件
+                模拟 Configure
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BizOrgController">
+            <summary>
+                机构管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Tree">
+            <summary>
+                获取机构树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Page(OPDispensary.System.SysOrgPageInput)">
+            <summary>
+                机构分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.OrgTreeSelector">
+            <summary>
+                获取机构树选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.UserSelector(OPDispensary.System.UserSelectorInput)">
+            <summary>
+                获取人员选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                机构详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Add(OPDispensary.System.SysOrgAddInput)">
+            <summary>
+                添加机构
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Edit(OPDispensary.System.SysOrgEditInput)">
+            <summary>
+                修改机构
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Copy(OPDispensary.System.SysOrgCopyInput)">
+            <summary>
+                复制组织
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizOrgController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除机构
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BizPositionController">
+            <summary>
+                岗位管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Tree(OPDispensary.System.PositionTreeInput)">
+            <summary>
+                获取职位树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Page(OPDispensary.System.PositionPageInput)">
+            <summary>
+                岗位分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                岗位详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Selector(OPDispensary.System.PositionSelectorInput)">
+            <summary>
+                岗位选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Add(OPDispensary.System.PositionAddInput)">
+            <summary>
+                添加岗位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Edit(OPDispensary.System.PositionEditInput)">
+            <summary>
+                修改岗位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizPositionController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除岗位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BizRoleController">
+            <summary>
+                业务角色管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Page(OPDispensary.System.RolePageInput)">
+            <summary>
+                角色分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Add(OPDispensary.System.RoleAddInput)">
+            <summary>
+                添加角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Edit(OPDispensary.System.RoleEditInput)">
+            <summary>
+                修改角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.ResourceTreeSelector">
+            <summary>
+                获取角色授权资源树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.OwnResource(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色拥有资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.GrantResource(OPDispensary.System.GrantResourceInput)">
+            <summary>
+                给角色授权资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.OwnUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色下的用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.GrantUser(OPDispensary.System.GrantUserInput)">
+            <summary>
+                给角色授权用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Tree(OPDispensary.System.RoleTreeInput)">
+            <summary>
+                获取角色树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizRoleController.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <summary>
+                获取角色选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BizUserController">
+            <summary>
+                人员管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Preview(OPDispensary.System.ImportPreviewInput)">
+            <summary>
+                导入预览
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Template">
+            <summary>
+                模板下载
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Page(OPDispensary.System.UserPageInput)">
+            <summary>
+                人员分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Selector(OPDispensary.System.UserSelectorInput)">
+            <summary>
+                获取人员选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.OwnRole(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取人员拥有角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                人员详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Add(OPDispensary.System.UserAddInput)">
+            <summary>
+                添加人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Edit(OPDispensary.System.UserEditInput)">
+            <summary>
+                修改人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Edits(OPDispensary.System.BatchEditInput)">
+            <summary>
+                批量修改人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.DisableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                禁用人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.EnableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                启用人员
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.ResetPassword(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                重置密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.GrantRole(OPDispensary.System.UserGrantRoleInput)">
+            <summary>
+                给人员授权角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Import(OPDispensary.System.ImportResultInput{OPDispensary.Application.BizUserImportInput})">
+            <summary>
+                人员导入
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BizUserController.Export(OPDispensary.System.UserPageInput)">
+            <summary>
+                人员导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.AuthBController">
+            <summary>
+                B端登录控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.GetPicCaptcha">
+            <summary>
+                B端获取图片验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.GetPhoneValidCode(OPDispensary.System.GetPhoneValidCodeInput)">
+            <summary>
+                B端获取手机验证码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.Login(OPDispensary.System.LoginInput)">
+            <summary>
+                B端登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.LoginByPhone(OPDispensary.System.LoginByPhoneInput)">
+            <summary>
+                B端手机号登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.LoginOut(OPDispensary.System.LoginOutInput)">
+            <summary>
+                登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.AuthBController.GetLoginUser">
+            <summary>
+                获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.SessionController">
+            <summary>
+                会话管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.PageB(OPDispensary.System.SessionPageInput)">
+            <summary>
+                B端会话分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.PageC(OPDispensary.System.SessionPageInput)">
+            <summary>
+                C端会话分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.Analysis">
+            <summary>
+                会话统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.ExitSessionForB(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                强退B端会话
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.ExitSessionForC(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                强退C端会话
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.ExitTokenForB(OPDispensary.System.ExitTokenInput)">
+            <summary>
+                强退B端Token
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SessionController.ExitTokenForC(OPDispensary.System.ExitTokenInput)">
+            <summary>
+                强退C端Token
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BaseController">
+            <summary>
+                基础控制器
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.BatchEditController">
+            <summary>
+                批量控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Page(OPDispensary.System.BatchEditPageInput)">
+            <summary>
+                批量分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Tables">
+            <summary>
+                获取表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.ConfigList(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取批量配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Columns(System.String)">
+            <summary>
+                获取批量配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Add(OPDispensary.System.BatchEditAddInput)">
+            <summary>
+                添加批量
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Config(System.Collections.Generic.List{OPDispensary.System.BatchEditConfigInput})">
+            <summary>
+                配置修改批量
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除批量
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.BatchEditController.Sync(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                批量更新同步
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.CommonController">
+            <summary>
+                系统通用控制器,一般是一些公共的接口
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.CommonController.Ico">
+            <summary>
+                获取系统基础配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.CommonController.SysInfo">
+            <summary>
+                获取系统基础配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.CommonController.LoginPolicy">
+            <summary>
+                获取系统基础配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.CommonController.TenantList">
+            <summary>
+                获取租户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.FileController">
+            <summary>
+                文件管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.FileController.Page(OPDispensary.System.FilePageInput)">
+            <summary>
+                文件查询分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.FileController.UploadLocal(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+                上传本地文件
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.FileController.UploadMinio(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+                上传MINIO文件
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.FileController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除文件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.FileController.DownLoad(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                下载文件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.MessageController">
+            <summary>
+                站内信控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MessageController.Page(OPDispensary.System.MessagePageInput)">
+            <summary>
+                分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MessageController.Send(OPDispensary.System.MessageSendInput)">
+            <summary>
+                发送站内信
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MessageController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                消息详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MessageController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除站内信
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.IndexController">
+            <summary>
+                系统首页控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.VisLogList">
+            <summary>
+                获取当前用户访问日志列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.OpLogList">
+            <summary>
+                获取当前用户操作日志列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.MessageList">
+            <summary>
+                获取当前用户站内信列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.ScheduleList(OPDispensary.System.ScheduleListInput)">
+            <summary>
+                获取当前用户日程列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.AddSchedule(OPDispensary.System.ScheduleAddInput)">
+            <summary>
+                添加日程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.IndexController.DeleteSchedule(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除日程
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.ButtonController">
+            <summary>
+                权限按钮控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Page(OPDispensary.System.ButtonPageInput)">
+            <summary>
+                按钮分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Add(OPDispensary.System.ButtonAddInput)">
+            <summary>
+                添加按钮
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Edit(OPDispensary.System.ButtonEditInput)">
+            <summary>
+                修改按钮
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除按钮
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Batch(OPDispensary.System.ButtonAddInput)">
+            <summary>
+                批量新增
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ButtonController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取按钮详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.MenuController">
+            <summary>
+                菜单管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.ModuleSelector">
+            <summary>
+                模块选择
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.Tree(OPDispensary.System.MenuTreeInput)">
+            <summary>
+                获取菜单树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.MenuTreeSelector(OPDispensary.System.MenuTreeInput)">
+            <summary>
+                获取菜单树选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.Add(OPDispensary.System.MenuAddInput)">
+            <summary>
+                添加菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.Edit(OPDispensary.System.MenuEditInput)">
+            <summary>
+                编辑菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取菜单详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.MenuController.ChangeModule(OPDispensary.System.MenuChangeModuleInput)">
+            <summary>
+                更改模块
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.ModuleController">
+            <summary>
+                模块管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.Page(OPDispensary.System.ModulePageInput)">
+            <summary>
+                模块分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.Add(OPDispensary.System.ModuleAddInput)">
+            <summary>
+                添加模块
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.Edit(OPDispensary.System.ModuleEditInput)">
+            <summary>
+                修改模块
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除模块
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取模块详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ModuleController.List">
+            <summary>
+                模块列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.RoleController">
+            <summary>
+                角色管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Page(OPDispensary.System.RolePageInput)">
+            <summary>
+                角色分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Add(OPDispensary.System.RoleAddInput)">
+            <summary>
+                添加角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Edit(OPDispensary.System.RoleEditInput)">
+            <summary>
+                修改角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.ResourceTreeSelector">
+            <summary>
+                获取角色授权资源树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.OwnResource(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色拥有资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.GrantResource(OPDispensary.System.GrantResourceInput)">
+            <summary>
+                给角色授权资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.PermissionTreeSelector(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取权限授权树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.OwnPermission(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色拥有权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.GrantPermission(OPDispensary.System.GrantPermissionInput)">
+            <summary>
+                给角色授权权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.OwnUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色下的用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.GrantUser(OPDispensary.System.GrantUserInput)">
+            <summary>
+                给角色授权用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Tree(OPDispensary.System.RoleTreeInput)">
+            <summary>
+                获取角色树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.RoleController.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <summary>
+                获取角色选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.SpaController">
+            <summary>
+                单页管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SpaController.Page(OPDispensary.System.SpaPageInput)">
+            <summary>
+                单页分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SpaController.Add(OPDispensary.System.SpaAddInput)">
+            <summary>
+                添加单页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SpaController.Edit(OPDispensary.System.SpaEditInput)">
+            <summary>
+                修改单页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SpaController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除单页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.SpaController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取单页详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LogOperateController">
+            <summary>
+                操作日志控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogOperateController.Page(OPDispensary.System.OperateLogPageInput)">
+            <summary>
+                操作日志分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogOperateController.BarChartData">
+            <summary>
+                操作日志周统计柱状图图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogOperateController.PieChartData">
+            <summary>
+                操作日志数量总览饼图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogOperateController.Delete(OPDispensary.System.OperateLogDeleteInput)">
+            <summary>
+                清空日志
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogOperateController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                日志详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LogVisitController">
+            <summary>
+                访问日志控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogVisitController.Page(OPDispensary.System.VisitLogPageInput)">
+            <summary>
+                访问日志分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogVisitController.LineChartData">
+            <summary>
+                访问日志周统计折线图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogVisitController.PieChartData">
+            <summary>
+                访问日志总览饼图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.LogVisitController.Delete(OPDispensary.System.VisitLogDeleteInput)">
+            <summary>
+                清空日志
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.ConfigController">
+            <summary>
+                系统配置控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.SysBaseList">
+            <summary>
+                获取系统基础配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.List">
+            <summary>
+                获取系统配置列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.Page(OPDispensary.System.ConfigPageInput)">
+            <summary>
+                配置分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.Add(OPDispensary.System.ConfigAddInput)">
+            <summary>
+                添加配置
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.Edit(OPDispensary.System.ConfigEditInput)">
+            <summary>
+                修改配置
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.Delete(OPDispensary.System.ConfigDeleteInput)">
+            <summary>
+                删除配置
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.ConfigController.EditBatch(System.Collections.Generic.List{OPDispensary.System.SysConfig})">
+            <summary>
+                配置批量更新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.DictController">
+            <summary>
+                系统字典控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DictController.Tree(OPDispensary.System.DictTreeInput)">
+            <summary>
+                获取字典树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DictController.Page(OPDispensary.System.DictPageInput)">
+            <summary>
+                字典分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DictController.Add(OPDispensary.System.DictAddInput)">
+            <summary>
+                添加字典
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DictController.Edit(OPDispensary.System.DictEditInput)">
+            <summary>
+                修改字典
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DictController.Delete(OPDispensary.System.DictDeleteInput)">
+            <summary>
+                删除字典
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.OrgController">
+            <summary>
+                组织管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Tree">
+            <summary>
+                获取组织树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.OrgTreeSelector">
+            <summary>
+                获取组织树选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Page(OPDispensary.System.SysOrgPageInput)">
+            <summary>
+                组织分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.UserSelector(OPDispensary.System.UserSelectorInput)">
+            <summary>
+                获取用户选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取组织详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Copy(OPDispensary.System.SysOrgCopyInput)">
+            <summary>
+                复制组织
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Add(OPDispensary.System.SysOrgAddInput)">
+            <summary>
+                添加组织
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Edit(OPDispensary.System.SysOrgEditInput)">
+            <summary>
+                修改组织
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.OrgController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除组织
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.PositionController">
+            <summary>
+                职位管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Page(OPDispensary.System.PositionPageInput)">
+            <summary>
+                职位分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Tree(OPDispensary.System.PositionTreeInput)">
+            <summary>
+                获取职位树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Selector(OPDispensary.System.PositionSelectorInput)">
+            <summary>
+                职位选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取职位详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Add(OPDispensary.System.PositionAddInput)">
+            <summary>
+                添加职位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Edit(OPDispensary.System.PositionEditInput)">
+            <summary>
+                修改职位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.PositionController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除职位
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.UserController">
+            <summary>
+                用户管理控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Page(OPDispensary.System.UserPageInput)">
+            <summary>
+                用户分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Selector(OPDispensary.System.UserSelectorInput)">
+            <summary>
+                获取用户选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.OwnRole(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取用户拥有角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.OwnResource(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取用户拥有资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.OwnPermission(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取用户拥有权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.PermissionTreeSelector(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取权限授权树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Preview(OPDispensary.System.ImportPreviewInput)">
+            <summary>
+                导入预览
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Template">
+            <summary>
+                模板下载
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                用户详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Add(OPDispensary.System.UserAddInput)">
+            <summary>
+                添加用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Edit(OPDispensary.System.UserEditInput)">
+            <summary>
+                修改用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Edits(OPDispensary.System.BatchEditInput)">
+            <summary>
+                批量修改用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.DisableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                禁用用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.EnableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                启用用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.ResetPassword(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                重置密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.GrantRole(OPDispensary.System.UserGrantRoleInput)">
+            <summary>
+                给用户授权角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.GrantResource(OPDispensary.System.UserGrantResourceInput)">
+            <summary>
+                给用户授权资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.GrantPermission(OPDispensary.System.GrantPermissionInput)">
+            <summary>
+                给用户授权权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Import(OPDispensary.System.ImportResultInput{OPDispensary.System.SysUserImportInput})">
+            <summary>
+                用户导入
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserController.Export(OPDispensary.System.UserPageInput)">
+            <summary>
+                用户导出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UploadController.UploadImg(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+                1
+                上传图片
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.UserCenterController">
+            <summary>
+                用户个人信息控制器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.LoginMenu(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取个人菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.LoginWorkbench">
+            <summary>
+                获取个人工作台
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.LoginOrgTree">
+            <summary>
+                获取组织架构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.LoginUnreadMessagePage(OPDispensary.System.MessagePageInput)">
+            <summary>
+                获取登录用户的站内信分页
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.LoginUnreadMessageDetail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                读取登录用户站内信详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UnReadCount">
+            <summary>
+                未读消息数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.DeleteMessage(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                删除我的消息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UpdatePassword(OPDispensary.System.UpdatePasswordInput)">
+            <summary>
+                修改密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UpdateAvatar(OPDispensary.Core.BaseFileInput)">
+            <summary>
+                修改头像
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.SetDefaultModule(OPDispensary.System.SetDefaultModuleInput)">
+            <summary>
+                修改默认模块
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.ShortcutTree">
+            <summary>
+                快捷方式菜单树
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UpdateUserInfo(OPDispensary.System.UpdateInfoInput)">
+            <summary>
+                编辑个人信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UpdateSignature(OPDispensary.System.UpdateSignatureInput)">
+            <summary>
+                更新签名
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.UserCenterController.UpdateUserWorkbench(OPDispensary.System.UpdateWorkbenchInput)">
+            <summary>
+                编辑工作台
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.MyActionFilter">
+            <summary>
+                操作筛选器
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.MyAuthorizationFilter">
+            <summary>
+                自定义授权筛选器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.JwtHandler.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+                重写 Handler 添加自动刷新
+            </summary>
+            <param name="context"></param>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.JwtHandler.CheckTokenFromRedis(Microsoft.AspNetCore.Http.DefaultHttpContext,System.Int32)">
+            <summary>
+                检查token有效性
+            </summary>
+            <param name="context">DefaultHttpContext</param>
+            <param name="expire">token有效期/分钟</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.JwtHandler.PipelineAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+                授权判断逻辑，授权通过返回 true，否则返回 false
+            </summary>
+            <param name="context"></param>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.JwtHandler.CheckAuthorizationAsync(Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+                检查权限
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LogExceptionHandler">
+            <summary>
+                全局异常处理提供器
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.DatabaseLoggingWriter">
+            <summary>
+                数据库写入器
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DatabaseLoggingWriter.CreateVisitLog(System.String,OPDispensary.Web.Core.LoggingMonitorJson,UAParser.ClientInfo)">
+            <summary>
+                创建访问日志
+            </summary>
+            <param name="operation">访问类型</param>
+            <param name="loggingMonitor">loggingMonitor</param>
+            <param name="clientInfo">客户端信息</param>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DatabaseLoggingWriter.CreateOperationLog(System.String,System.String,OPDispensary.Web.Core.LoggingMonitorJson,UAParser.ClientInfo)">
+            <summary>
+                创建操作日志
+            </summary>
+            <param name="operation">操作名称</param>
+            <param name="path">请求地址</param>
+            <param name="loggingMonitor">loggingMonitor</param>
+            <param name="clientInfo">客户端信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Web.Core.DatabaseLoggingWriter.GetLoginAddress(System.String)">
+            <summary>
+                解析IP地址
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LoggingConst">
+            <summary>
+                日志常量
+            </summary>
+        </member>
+        <member name="F:OPDispensary.Web.Core.LoggingConst.OPERATION">
+            <summary>
+                操作名称
+            </summary>
+        </member>
+        <member name="F:OPDispensary.Web.Core.LoggingConst.CLIENT">
+            <summary>
+                客户端信息
+            </summary>
+        </member>
+        <member name="F:OPDispensary.Web.Core.LoggingConst.PATH">
+            <summary>
+                请求地址
+            </summary>
+        </member>
+        <member name="F:OPDispensary.Web.Core.LoggingConst.METHOD">
+            <summary>
+                请求方法：POST/GET
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.LoggingMonitorJson">
+            <summary>
+                请求信息格式化
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.Title">
+            <summary>
+                标题
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.DisplayTitle">
+            <summary>
+                操作名称
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.ControllerName">
+            <summary>
+                控制器名
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.ActionName">
+            <summary>
+                方法名称
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.DisplayName">
+            <summary>
+                类名称
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.LocalIPv4">
+            <summary>
+                服务端
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.RemoteIPv4">
+            <summary>
+                客户端IPV4地址
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.HttpMethod">
+            <summary>
+                请求方法
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.RequestUrl">
+            <summary>
+                请求地址
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.UserAgent">
+            <summary>
+                浏览器标识
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.OsDescription">
+            <summary>
+                系统名称
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.OsArchitecture">
+            <summary>
+                系统架构
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.Environment">
+            <summary>
+                环境
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.AuthorizationClaims">
+            <summary>
+                认证信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.Parameters">
+            <summary>
+                参数列表
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.ReturnInformation">
+            <summary>
+                返回信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.Exception">
+            <summary>
+                异常信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.Validation">
+            <summary>
+                验证错误信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.LoggingMonitorJson.LogDateTime">
+            <summary>
+                日志时间
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.AuthorizationClaims">
+            <summary>
+                认证信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.AuthorizationClaims.Type">
+            <summary>
+                类型
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.AuthorizationClaims.Value">
+            <summary>
+                值
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.Parameters">
+            <summary>
+                请求参数
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Parameters.Name">
+            <summary>
+                参数名
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Parameters.Value">
+            <summary>
+                值
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.ReturnInformation">
+            <summary>
+                返回信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.Value">
+            <summary>
+                返回值
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.ReturnValue.Code">
+            <summary>
+                返回码
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.ReturnValue.Msg">
+            <summary>
+                消息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.ReturnValue.Extras">
+            <summary>
+                额外信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.ReturnValue.Data">
+            <summary>
+                内如
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.ReturnInformation.ReturnValue.Time">
+            <summary>
+                时间
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.Exception">
+            <summary>
+                异常信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Exception.Type">
+            <summary>
+                异常类型
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Exception.Message">
+            <summary>
+                异常内容
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Exception.StackTrace">
+            <summary>
+                堆栈信息
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.Validation">
+            <summary>
+                验证失败信息
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.Validation.Message">
+            <summary>
+                错误详情
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.WebStatusMiddleware">
+            <summary>
+                网站开启状态 状态中间件
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.WebStatusMiddlewareExtensions">
+            <summary>
+                中间件拓展类
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.WebSettingsOptions">
+            <summary>
+                系统配置选项
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.WebSettingsOptions.EnvPoc">
+            <summary>
+                是否演示环境
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Web.Core.WebSettingsOptions.ClearRedis">
+            <summary>
+                是否清除Redis缓存
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Web.Core.Startup">
+            <summary>
+                Web启动项配置
+            </summary>
+        </member>
+    </members>
+</doc>

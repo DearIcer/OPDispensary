@@ -1,0 +1,13 @@
+{
+  "SqlSugarSettings": {
+    "ConnectionStrings": [
+      {
+        "ConfigId": "OPDispensary",
+        "ConnectionString": "DataSource=192.168.0.180;Database=OPDispensary;Uid=root;Pwd=8icymZp_WvFkzMt",
+        "DbType": "Mysql",
+        "IsAutoCloseConnection": true,
+        "IsUnderLine": false
+      }
+    ]
+  }
+}

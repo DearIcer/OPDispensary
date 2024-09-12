@@ -1,0 +1,635 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OPDispensary.Application</name>
+    </assembly>
+    <members>
+        <member name="F:OPDispensary.Application.ApplicationConst.BIZ_ORG">
+            <summary>
+                机构
+            </summary>
+        </member>
+        <member name="F:OPDispensary.Application.ApplicationConst.BIZ_POS">
+            <summary>
+                岗位
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Application.ApplicationSettingsOptions">
+            <summary>
+                系统配置
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.DrugCode">
+            <summary>
+                药品编码
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Name">
+            <summary>
+                药品名称
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Manufacturer">
+            <summary>
+                生产厂家
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Specification">
+            <summary>
+                规格
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Unit">
+            <summary>
+                单位
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.DosageForm">
+            <summary>
+                剂型
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Packaging">
+            <summary>
+                包装
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.DrugType">
+            <summary>
+                药品类型
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Description">
+            <summary>
+                药品描述
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.DrugStatus">
+            <summary>
+                药品状态
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.Price">
+            <summary>
+                价格
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.StockQuantity">
+            <summary>
+                库存数量
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.ExpiryDate">
+            <summary>
+                过期日期
+            </summary>
+        </member>
+        <member name="P:OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput.SupplierID">
+            <summary>
+                供应商ID
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Application.IOrgService">
+            <summary>
+                机构服务
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Add(OPDispensary.System.SysOrgAddInput)">
+            <summary>
+                添加机构
+            </summary>
+            <param name="input">添加参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Copy(OPDispensary.System.SysOrgCopyInput)">
+            <summary>
+                复制机构
+            </summary>
+            <param name="input">机构复制参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除机构
+            </summary>
+            <param name="input">删除参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Edit(OPDispensary.System.SysOrgEditInput)">
+            <summary>
+                编辑机构
+            </summary>
+            <param name="input">编辑参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Page(OPDispensary.System.SysOrgPageInput)">
+            <summary>
+                机构分页查询
+            </summary>
+            <param name="input">查询参数</param>
+            <returns>分页信息</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Tree(OPDispensary.System.SysOrgTreeInput)">
+            <summary>
+                机构树结构
+            </summary>
+            <param name="input">机构选择器</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IOrgService.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                机构详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.OrgService">
+            <inheritdoc cref="T:OPDispensary.Application.IOrgService" />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Page(OPDispensary.System.SysOrgPageInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Tree(OPDispensary.System.SysOrgTreeInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Add(OPDispensary.System.SysOrgAddInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Edit(OPDispensary.System.SysOrgEditInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Copy(OPDispensary.System.SysOrgCopyInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.Detail(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.OrgService.CheckInput(OPDispensary.System.SysOrg,System.String)">
+            <summary>
+                检查输入参数
+            </summary>
+            <param name="sysOrg">参数</param>
+            <param name="operate">操作名称</param>
+        </member>
+        <member name="T:OPDispensary.Application.IPositionService">
+            <summary>
+                岗位管理
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Add(OPDispensary.System.PositionAddInput)">
+            <summary>
+                添加岗位
+            </summary>
+            <param name="input">添加参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除岗位
+            </summary>
+            <param name="input">id列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Edit(OPDispensary.System.PositionEditInput)">
+            <summary>
+                编辑岗位
+            </summary>
+            <param name="input">编辑参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Page(OPDispensary.System.PositionPageInput)">
+            <summary>
+                岗位分页查询
+            </summary>
+            <param name="input">查询参数</param>
+            <returns>分页列表</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Selector(OPDispensary.System.PositionSelectorInput)">
+            <summary>
+                岗位选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                岗位详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IPositionService.Tree(OPDispensary.System.PositionTreeInput)">
+            <summary>
+                岗位树形结构
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.PositionService">
+            <summary>
+                <inheritdoc cref="T:OPDispensary.Application.IPositionService" />
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Edit(OPDispensary.System.PositionEditInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.CheckInput(OPDispensary.System.SysPosition,System.String)">
+            <summary>
+                检查输入参数
+            </summary>
+            <param name="sysPosition">参数</param>
+            <param name="operate">操作名称</param>
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Page(OPDispensary.System.PositionPageInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Tree(OPDispensary.System.PositionTreeInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Add(OPDispensary.System.PositionAddInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Selector(OPDispensary.System.PositionSelectorInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.PositionService.Detail(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Add(OPDispensary.System.RoleAddInput)">
+            <summary>
+                添加角色
+            </summary>
+            <param name="input">添加参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除角色
+            </summary>
+            <param name="input">删除参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.OwnResource(OPDispensary.Core.BaseIdInput,System.String)">
+            <summary>
+                角色拥有资源
+            </summary>
+            <param name="input">角色id</param>
+            <param name="category">资源类型</param>
+            <returns>角色拥有资源信息</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.OwnUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取角色下的用户
+            </summary>
+            <param name="input">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Page(OPDispensary.System.RolePageInput)">
+            <summary>
+                分页查询角色
+            </summary>
+            <param name="input">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <summary>
+                角色选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Tree(OPDispensary.System.RoleTreeInput)">
+            <summary>
+                获取角色树
+            </summary>
+            <param name="input">角色树</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                角色详情
+            </summary>
+            <param name="input">角色Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.ResourceTreeSelector">
+            <summary>
+                资源树选择器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.Edit(OPDispensary.System.RoleEditInput)">
+            <summary>
+                编辑角色
+            </summary>
+            <param name="input">编辑参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.GrantResource(OPDispensary.System.GrantResourceInput)">
+            <summary>
+                给角色授权
+            </summary>
+            <param name="input">授权参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IRoleService.GrantUser(OPDispensary.System.GrantUserInput)">
+            <summary>
+                给角色授权用户
+            </summary>
+            <param name="input">授权信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.RoleService">
+            <inheritdoc cref="T:OPDispensary.Application.IRoleService" />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Add(OPDispensary.System.RoleAddInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.OwnResource(OPDispensary.Core.BaseIdInput,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.OwnUser(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Page(OPDispensary.System.RolePageInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Tree(OPDispensary.System.RoleTreeInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Detail(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.ResourceTreeSelector">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.Edit(OPDispensary.System.RoleEditInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.GrantResource(OPDispensary.System.GrantResourceInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.GrantUser(OPDispensary.System.GrantUserInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.CheckInput(OPDispensary.System.SysRole)">
+            <summary>
+                检查输入参数
+            </summary>
+            <param name="sysRole"></param>
+        </member>
+        <member name="M:OPDispensary.Application.RoleService.GetRoleGrantResourceMenus(System.Int64,System.Collections.Generic.List{OPDispensary.System.SysResource},System.Collections.Generic.List{OPDispensary.System.SysResource})">
+            <summary>
+                获取授权菜单
+            </summary>
+            <param name="moduleId">模块Id</param>
+            <param name="ownMenuList">拥有菜单列表</param>
+            <param name="ownButtonList">拥有权限按钮列表</param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.BizUserImportInput">
+            <summary>
+                业务用户导入
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Application.BizUserExportOutput">
+            <summary>
+                业务用户导出
+            </summary>
+        </member>
+        <member name="T:OPDispensary.Application.IUserService">
+            <summary>
+                人员管理服务
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Add(OPDispensary.System.UserAddInput)">
+            <summary>
+                添加用户
+            </summary>
+            <param name="input">添加参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <summary>
+                删除用户
+            </summary>
+            <param name="input">Id列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Selector(OPDispensary.System.UserSelectorInput)">
+            <summary>
+                人员选择器
+            </summary>
+            <param name="input">查询参数</param>
+            <returns>人员列表</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Page(OPDispensary.System.UserPageInput)">
+            <summary>
+                用户分页查询
+            </summary>
+            <param name="input">查询参数</param>
+            <returns>用户分页列表</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.OwnRole(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                获取用户拥有角色
+            </summary>
+            <param name="input">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <summary>
+                角色选择器
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Detail(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                人员详情
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Edit(OPDispensary.System.UserEditInput)">
+            <summary>
+                编辑
+            </summary>
+            <param name="input">编辑参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.DisableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                禁用用户
+            </summary>
+            <param name="input">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.EnableUser(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                启用用户
+            </summary>
+            <param name="input">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.ResetPassword(OPDispensary.Core.BaseIdInput)">
+            <summary>
+                重置密码
+            </summary>
+            <param name="input">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.GrantRole(OPDispensary.System.UserGrantRoleInput)">
+            <summary>
+                给用户授权角色
+            </summary>
+            <param name="input">授权参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Preview(OPDispensary.System.ImportPreviewInput)">
+            <summary>
+                导入预览
+            </summary>
+            <param name="input">导入参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Template">
+            <summary>
+                获取导入模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Export(OPDispensary.System.UserPageInput)">
+            <summary>
+                导出
+            </summary>
+            <param name="input">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Import(OPDispensary.System.ImportResultInput{OPDispensary.Application.BizUserImportInput})">
+            <summary>
+                导入数据
+            </summary>
+            <param name="input">数据</param>
+            <returns>导入结果</returns>
+        </member>
+        <member name="M:OPDispensary.Application.IUserService.Edits(OPDispensary.System.BatchEditInput)">
+            <summary>
+                批量编辑
+            </summary>
+            <param name="input">编辑字段信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.UserService">
+            <summary>
+                <inheritdoc cref="T:OPDispensary.Application.IUserService" />
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Add(OPDispensary.System.UserAddInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Delete(OPDispensary.Core.BaseIdListInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Page(OPDispensary.System.UserPageInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.OwnRole(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Selector(OPDispensary.System.UserSelectorInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.RoleSelector(OPDispensary.System.RoleSelectorInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Detail(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Edit(OPDispensary.System.UserEditInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Edits(OPDispensary.System.BatchEditInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.DisableUser(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.EnableUser(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.GrantRole(OPDispensary.System.UserGrantRoleInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.ResetPassword(OPDispensary.Core.BaseIdInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Template">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Preview(OPDispensary.System.ImportPreviewInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Export(OPDispensary.System.UserPageInput)">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.Import(OPDispensary.System.ImportResultInput{OPDispensary.Application.BizUserImportInput})">
+            <inheritdoc />
+        </member>
+        <member name="M:OPDispensary.Application.UserService.CheckInput(OPDispensary.System.SysUser,System.String)">
+            <summary>
+                检查输入参数
+            </summary>
+            <param name="sysUser"></param>
+            <param name="operate">操作类型</param>
+        </member>
+        <member name="M:OPDispensary.Application.UserService.CheckInput(System.Int64,System.String)">
+            <summary>
+                检查输入参数
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="operate">操作</param>
+        </member>
+        <member name="M:OPDispensary.Application.UserService.CheckImport(System.Collections.Generic.List{OPDispensary.Application.BizUserImportInput},System.Collections.Generic.List{System.Int64},System.Boolean)">
+            <summary>
+                检查导入数据
+            </summary>
+            <param name="data">数据</param>
+            <param name="dataScope">数据范围ID数组</param>
+            <param name="clearError">是否初始化错误</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPDispensary.Application.UserService.GetQuery(OPDispensary.System.UserPageInput)">
+            <summary>
+                获取查询条件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPDispensary.Application.Startup">
+            <summary>
+                AppStartup启动类
+            </summary>
+        </member>
+        <member name="M:OPDispensary.Application.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                ConfigureServices中不能解析服务，比如App.GetService()，尤其是不能在ConfigureServices中获取诸如缓存等数据进行初始化，应该在Configure中进行
+                服务都还没初始化完成，会导致内存中存在多份 IOC 容器！！
+                正确应该在 Configure 中，这个时候服务（IServiceCollection 已经完成 BuildServiceProvider() 操作了
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

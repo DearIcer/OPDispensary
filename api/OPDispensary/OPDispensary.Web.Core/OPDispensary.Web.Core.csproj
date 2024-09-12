@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\OPDispensary.Application\OPDispensary.Application.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Web.Development.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Web.Production.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Controllers\Application\DMS\"/>
+    </ItemGroup>
+
+
+</Project>

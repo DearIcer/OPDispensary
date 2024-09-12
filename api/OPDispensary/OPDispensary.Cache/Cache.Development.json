@@ -1,0 +1,17 @@
+{
+  //缓存设置
+  "CacheSettings": {
+    "UseRedis": true,
+    //启用redis
+    "RedisSettings": {
+      "Address": "192.168.0.180:6379",
+      //地址
+      "Password": "8icymZp_WvFkzMt",
+      //Redis服务密码
+      "Db": 9,
+      //默认库
+      "ClearRedis": true
+      //是否每次启动都清除Redis缓存
+    }
+  }
+}

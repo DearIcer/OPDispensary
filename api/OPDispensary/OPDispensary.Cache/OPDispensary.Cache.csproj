@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="SimpleRedis" Version="1.1.9"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OPDispensary.Core\OPDispensary.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Cache.Development.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Cache.Production.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

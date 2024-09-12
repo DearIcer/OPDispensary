@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <None Remove="applicationsettings.Development.json"/>
+        <None Remove="applicationsettings.Production.json"/>
+        <None Remove="OPDispensary.Application.xml"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OPDispensary.System\OPDispensary.System.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Application.Development.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Application.Production.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Folder Include="Entity\"/>
+    </ItemGroup>
+
+</Project>
