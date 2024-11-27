@@ -3,7 +3,7 @@ using OPDispensary.System.Entity;
 
 namespace OPDispensary.System.Services.DMS.Drug;
 
-public interface IDrugService : ITransient
+public interface ISysDrugService : ITransient
 {
     public Task<List<DMSDrug>> GetDrugList(Expression<Func<DMSDrug, bool>> whereExpression);
     public Task<DMSDrug> GetDrug(Expression<Func<DMSDrug, bool>> whereExpression);

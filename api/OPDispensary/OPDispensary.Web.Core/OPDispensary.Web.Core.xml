@@ -26,6 +26,13 @@
                 模拟 Configure
             </summary>
         </member>
+        <member name="M:OPDispensary.Web.Core.Controllers.Application.DMS.DrugController.Add(OPDispensary.Application.Services.DMS.Drug.Dto.AddDrugInput)">
+            <summary>
+                添加药品
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
         <member name="T:OPDispensary.Web.Core.BizOrgController">
             <summary>
                 机构管理控制器
